@@ -36,7 +36,9 @@ class CameraComponent: public Component
 
     void Update() override
     {
-
+        glUseProgram(*program);
+        //glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        program->set("tint", glm::vec4(1, 1, 1, 1));
         program->set("transform", camera->getVPMatrix() * tr->to_mat4());
     }
 

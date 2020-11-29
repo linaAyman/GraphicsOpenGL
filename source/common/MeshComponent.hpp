@@ -31,13 +31,13 @@ public:
 
     void Update() override
     {
-        glUseProgram(*program);
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+//        glUseProgram(*program);
+//        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        program->set("tint", glm::vec4(1, 1, 1, 1));
+        //program->set("tint", glm::vec4(1, 1, 1, 1));
         mesh->draw(start,count);
 
-        glClear(GL_DEPTH_BUFFER_BIT);
+//        glClear(GL_DEPTH_BUFFER_BIT);
     }
 
     void Destroy() override

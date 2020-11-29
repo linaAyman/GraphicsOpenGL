@@ -47,7 +47,7 @@ public:
     void Update() override
     {
         glUseProgram(*program);
-        glClear(GL_COLOR_BUFFER_BIT);
+        //glClear(GL_COLOR_BUFFER_BIT);
 
         //program->set("tint", glm::vec4(1, 1, 1, 1));
         program->set("transform", to_mat4());
